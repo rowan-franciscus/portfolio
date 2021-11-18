@@ -1,0 +1,52 @@
+.projects {
+    margin-top: 30rem;
+
+    &__heading {
+        margin-left: 15rem;
+        margin-bottom: 5rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5rem;
+    }
+
+    &__item {
+        transition: all .2s;
+        position: relative;
+        text-align: center;
+    }
+
+    &__item:hover &__image {
+        transform: translateY(-25px);
+        filter: grayscale(0);
+    }
+
+    &__item:hover &__btn {
+        opacity: 100;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 18rem;
+    }
+
+    &__image {
+        max-width: 35rem;
+        background-size: cover;
+        border-radius: 1rem;
+        transition: all .2s;
+        filter: grayscale(100);
+    }
+
+    &__btn {
+        opacity: 0;
+        z-index: 5;
+        white-space: nowrap;
+        position: absolute;
+        left: 50%;
+        top: 14rem;
+        transform: translateX(-50%);
+    }
+    
+}

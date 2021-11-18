@@ -1,0 +1,12 @@
+.about {
+    max-width: 84rem;
+    margin: 25rem auto 0 auto;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-gap: 3rem;
+    justify-items: flex-start;
+
+    &__text {
+        margin-bottom: 2rem;
+    }
+}

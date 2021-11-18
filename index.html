@@ -1,372 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<head>
+        <!-- Open Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sass/main.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Rowan Franciscus &mdash; Portfolio</title>
+    </head>
 
-    <title>Design Portfolio</title>
+    <body class="container">
+        
+        <div class="navbar">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/a9c5508714.js" crossorigin="anonymous"></script>
+            <a href="#"><img class="navbar__logo" src="assets/signature-logo.png" alt="logo"></a>
 
-    <!-- CSS Style Sheets -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+            <div class="navbar__list">
+                <a class="navbar__link" href="#about">About</a>
+                <a class="navbar__link" href="#projects">Projects</a>
+                <a class="navbar__link" href="#contact">Contact</a>
+                <a class="btn" href="assets/resume.pdf" target="_blank">Resume.pdf</a>
+            </div>
+        
+        </div>
 
-    <!-- Bootstrap Scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <header class="hero">
+            
+            <div class="hero__grid">
 
-</head>
-
-<body>
-
-    <section id="title">
-
-        <div class="container-fluid">
-
-            <!-- Nav Bar -->
-
-            <nav class="navbar navbar-expand-lg navbar-light">
-
-                <a class="navbar-brand" href="#">Rowan Franciscus</a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-dark" href="resume.pdf" target="_blank">Resume</a>
-                        </li>
-                    </ul>
-
+                <div class="hero__text">
+                    <h1 class="heading-1">Hello</h1>
+                    <p class="hero__quote">"I create unique & stylish web experiences." <br> - Rowan Franciscus</p>
                 </div>
 
-            </nav>
+                <img src="assets/hero-image.png" alt="hero image" class="hero__image">
 
-            <!-- Title -->
+            </div>
 
-            <div class="row">
+        </header>
 
-                <div class="col-lg-7 my-auto">
-                    <div class="hero-text">
-                        <h1>"I design unique & stylish web experiences."</h1>
-                        <a class="btn btn-dark hero-button" type="button" href="#projects">See my work</a>
-                        <a class="btn btn-outline-dark hero-button" type="button" href="#contact">Get in touch</a>
+        <div class="about">
+
+            <h2 id="about" class="heading-2">About me</h2>
+            <p class="about__text">I am a web developer based in Namibia. I have a passion for solving real-world problems
+                using design, entrepreneurship and technology. Along my journey, I have studied and
+                graduated from Architecture, founded and run three start-ups, and completed various design
+                projects. I'm quietly confident, naturally curious, and always working on improving my skills
+                one problem at a time. I Love creating things, and I can bring a comprehensive perspective
+                to any project, using my experience and knowledge in design, entrepreneurship and technology.
+            </p>
+            <a class="btn" href="" target="_blank">View my resume</a>
+
+        </div>
+
+        <div class="design-process">
+            
+            <img src="assets/design-process-text.png" alt="Design Process" class="design-process__heading">
+
+            <div class="design-process__steps">
+
+                <div class="design-process__item">
+                    <h3 class="heading-3">Brief</h3>
+                    <p class="design-process__text">The first thing that I do is
+                        define the problem that
+                        needs to be solved, and set
+                        out the goals for the
+                        project.
+                    </p>
+                </div>
+
+                <div class="design-process__item">
+                    <h3 class="heading-3">Precedent</h3>
+                    <p class="design-process__text">I do research on similar
+                        projects completed by
+                        others, to help shape the
+                        vision and ideas for the
+                        project.
+                    </p>
+                </div>
+
+                <div class="design-process__item">
+                    <h3 class="heading-3">Concept</h3>
+                    <p class="design-process__text">This is the stage that refines
+                        the thinking behind the
+                        design. I match the design
+                        ideas to the goals of the
+                        project.                        
+                    </p>
+                </div>
+
+                <div class="design-process__item">
+                    <h3 class="heading-3">Development</h3>
+                    <p class="design-process__text">Where the magic happens.
+                        Finally, I use my tools and
+                        knowledge to turn concept
+                        into reality.                        
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="technology">
+            
+            <img src="assets/technology-text.png" alt="Technology" class="technology__heading">
+
+            <div class="technology__list">
+
+                <div class="technology__item">
+                    <img class="technology__icon" src="assets/icons/photoshop-icon.png" alt="Photoshop">
+                    <div class="technology__text">
+                        <h3 class="heading-3">Photoshop</h3>
+                        <p class="technology__label">Proficient</p>
+                    </div>                    
+                </div>
+
+                <div class="technology__item">
+                    <img class="technology__icon" src="assets/icons/illustator-icon.png" alt="Illustrator">
+                    <div class="technology__text">
+                        <h3 class="heading-3">Illustrator</h3>
+                        <p class="technology__label">Proficient</p>
+                    </div>                    
+                </div>
+
+                <div class="technology__item">
+                    <img class="technology__icon" src="assets/icons/html5-icon.png" alt="HTML5">
+                    <div class="technology__text">
+                        <h3 class="heading-3">HTML5</h3>
+                        <p class="technology__label">Proficient</p>
                     </div>
                 </div>
 
-                <div class="col-lg-5 hero-image-div">
-                    <img class="hero-image-2" src="assets/hero/hero-image-3.png" alt="hero-image">
-                    <img class="hero-image-1" src="assets/hero/hero-image-1.png" alt="hero-image">
+                <div class="technology__item">
+                    <img class="technology__icon" src="assets/icons/css3-icon.png" alt="CSS3">
+                    <div class="technology__text">
+                        <h3 class="heading-3">CSS3</h3>
+                        <p class="technology__label">Proficient</p>
+                    </div>
+                </div>
+
+                <div class="technology__item">
+                    <img class="technology__icon" src="assets/icons/javascript-icon.png" alt="JavaScript">
+                    <div class="technology__text">
+                        <h3 class="heading-3">JavaScript</h3>
+                        <p class="technology__label">Currently Studying</p>
+                    </div>
+                </div>
+
+                <div class="technology__item">
+                    <img class="technology__icon" src="assets/icons/react-icon.png" alt="React">
+                    <div class="technology__text">
+                        <h3 class="heading-3">React.js</h3>
+                        <p class="technology__label">Currently Studying</p>
+                    </div>                   
+                </div>
+
+                <div class="technology__item">
+                    <img class="technology__icon" src="assets/icons/java-icon.png" alt="Java">
+                    <div class="technology__text">
+                        <h3 class="heading-3">Java</h3>
+                        <p class="technology__label">Fimiliar</p>
+                    </div>                   
                 </div>
 
             </div>
-
         </div>
 
-    </section>
+        <div class="projects">
 
-    <!-- About Me -->
+            <h2 id="projects" class="heading-2 projects__heading">Projects</h2>
 
-    <section id="about">
+            <div class="projects__list">
 
-        <h2>About me</h2>
-
-        <p>Hi, I am a web designer and aspiring developer based in Namibia. I am passionate about design, technology, entrepreneurship, health and fitness, and I love creating things. I believe that contrast makes life interesting; the juxtaposition of old-school and modern, natural and man-made, emotion and logic. There is beauty in finding a way in which two extreme opposites can not only co-exist, but also compliment one another. I enjoy challenges and opportunities for continued growth and learning. Almost anything is possible with the right amount of hunger, vision, work ethic and discipline. I am a bit of a perfectionist; true beauty can be found in the smallest detail.</p>
-
-        <!-- <p>“Our deepest fear is not that we are inadequate.
-            Our deepest fear is that we are powerful beyond measure.
-            It is our light, not our darkness, that most frightens us.
-            Your playing small does not serve the world.
-            There is nothing enlightend about shrinking
-            so that other people won’t feel insecure around you.
-            We were all meant to shine as children do.
-            It’s not just in some of us, it’s in everyone.
-            And as we let our own light shine, We unconsciously
-            give other people permission to do the same.
-            As we are liberated from our own fears,
-            our presence automatically liberates others.”
-                    - Marianne Williamson</p> -->
-                    
-    </section>
-
-    <!-- Design Process -->
-
-    <section id="design-process">
-
-        <h2>My design process</h2>
-
-        <div class="row">
-
-            <div class="design-process-box col-lg-3 col-md-6">
-                <i class="fas fa-file-alt fa-7x dp-icon"></i>
-                <h3>Brief</h3>
-                <p>The first thing that I do is define the problem that needs to be solved, and set out the goals for the project.</p>
-            </div>
-    
-            <div class="design-process-box col-lg-3 col-md-6">
-                <i class="fas fa-search fa-7x dp-icon"></i>
-                <h3>Precedent</h3>
-                <p>I do research on similar projects completed by others, to help shape the vision and ideas for the project.</p>
-            </div>
-    
-            <div class="design-process-box col-lg-3 col-md-6">
-                <i class="fas fa-brain fa-7x dp-icon"></i>
-                <h3>Concept</h3>
-                <p>This is the stage that refines the thinking behind the design. I match the design ideas to the goals of the project.</p>
-            </div>
-    
-            <div class="design-process-box col-lg-3 col-md-6">
-                <i class="fas fa-pen-fancy fa-7x dp-icon"></i>
-                <h3>Design</h3>
-                <p>Where the magic happens. Finally, I use my tools and knowledge to turn concept into reality.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Technologies -->
-
-    <section id="technologies-know">
-
-        <h2>Technologies I know</h2>
-
-        <div class="row">
-
-            <div class="technologies-box col-lg-3 col-6">
-                <img class="icon-image" src="assets/icons/photoshop-icon.png" alt="icon">
-                <h5>Photoshop</h5>
-            </div>
-
-            <div class="technologies-box col-lg-3 col-6">
-                <img class="icon-image" src="assets/icons/illustator-icon.png" alt="icon">
-                <h5>Illustrator</h5>
-            </div>
-
-            <div class="technologies-box col-lg-3 col-6">
-                <img class="icon-image" src="assets/icons/html5-icon.png" alt="icon">
-                <h5>HTML5</h5>
-            </div>
-
-            <div class="technologies-box col-lg-3 col-6">
-                <img class="icon-image" src="assets/icons/css3-icon.png" alt="icon">
-                <h5>CSS3</h5>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="technologies-learning">
-
-        <h2>Technologies I'm currently studying</h2>
-
-        <div class="row">
-
-            <div class="technologies-box col-lg-4 col-6">
-                <img class="icon-image" src="assets/icons/javascript-icon.png" alt="icon">
-                <h5>JavaScript</h5>
-            </div>
-
-            <div class="technologies-box col-lg-4 col-6">
-                <img class="icon-image" src="assets/icons/react-icon.png" alt="icon">
-                <h5>React.js</h5>
-            </div>
-
-            <div class="technologies-box col-lg-4 col-6">
-                <img class="icon-image" src="assets/icons/java-icon.png" alt="icon">
-                <h5>Java</h5>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Projects -->
-
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <h5>Websites</h5>
-
-        <div class="row">
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/nexter-thumbnail.jpg" alt="project thumbnail">
-                <a href="https://nexter-rowanff.netlify.app/" target="_blank">Nexter</a>
-            </div>
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/natours-thumbnail.jpg" alt="project thumbnail">
-                <a href="https://natours-rowanff.netlify.app/" target="_blank">Natours</a>
-            </div>
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/trillo-thumbnail.jpg" alt="project thumbnail">
-                <a href="https://trillo-rowanff.netlify.app" target="_blank">Trillo</a>
-            </div>
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/tindog-thumbnail.jpg" alt="project thumbnail">
-                <a href="https://tindog-rowanff.netlify.app" target="_blank">Tindog</a>
-            </div>
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/museumofcandy-thumbnail.jpg" alt="project thumbnail">
-                <a href="https://museumofcandy-rowanff.netlify.app" target="_blank">Museum of Candy</a>
-            </div>
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/drumkit-thumbnail.jpg" alt="project thumbnail">
-                <a href="https://drumkit-rowanff.netlify.app" target="_blank">Drumkit</a>
-            </div>
-            
-        </div>
-
-        <h5>Website Designs</h5>
-
-        <div class="row">
-
-            <!-- <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/wonder-thumbnail.jpg" alt="project thumbnail">
-                <a href="projects/wonder/wonder.html">Wonder</a>
-            </div> -->
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/autotempest-thumbnail.jpg" alt="project thumbnail">
-                <a href="projects/autotempest/autotempest.html">AutoTempest Redesign</a>
-            </div>
-            
-        </div>
-
-        <h5>Branding Projects</h5>
-
-        <div class="row">
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/power-thumbnail.jpg" alt="project thumbnail">
-                <a href="projects/power-nutrition/power.html">Power Nutrition</a>
-            </div>
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/foodbox-thumbnail.jpg" alt="project thumbnail">
-                <a href="projects/foodbox/foodbox.html">FoodBox</a>
-            </div>
-
-            <!-- <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/plates-thumbnail.jpg" alt="project thumbnail">
-                <a href="projects/plates/plates.html">Plates</a>
-            </div> -->
-            
-        </div>
-
-        <h5>Other Design Work</h5>
-
-        <div class="row">
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/polar-thumbnail.jpg" alt="project thumbnail">
-                <a href="projects/polar-ice-cream-posters/polar.html">Polar Ice Cream Posters</a>
-            </div>
-
-            <!-- <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/cirrus-thumbnail.jpg" alt="project thumbnail">
-                <a href="projects/cirrus/cirrus.html">Cirrus Client Wine Gift</a>
-            </div> -->
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/venus-thumbnail.jpg" alt="project thumbnail">
-                <a href="projects/venus-poster/venus.html">Venus Ladies Gym Poster</a>
-            </div>
-
-            <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/puma-thumbnail.jpg" alt="project thumbnail">
-                <a href="projects/puma-cards/puma.html">Puma Fuel Station Cards</a>
-            </div>
-
-            <!-- <div class="project-thumbnail col-md-6 col-lg-4">
-                <img class="img-thumbnail" src="assets/project-thumbnails/coffee-table-thumbnail.jpg" alt="project thumbnail">
-                <a href="projects/coffee-table/coffee-table.html">Coffee Table Design</a>
-            </div> -->
-            
-        </div>
-        
-    </section>
-
-    <!-- Contact -->
-
-    <section id="contact">
-
-        <h2>Get in touch</h2>
-
-        <p>rowan.franciscus@gmail.com   |   (+264) 81 655 4051</p>
-
-<!--         <form action=”https://formsubmit.co/rowan.franciscus@gmail.com” method=”POST” enctype=”text/plain” name=”EmailForm”>
-
-            <div class="row">
-
-                <div class="form-group col-lg-6">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name" name="Name" required>
-                </div>
-    
-                <div class="form-group col-lg-6">
-                  <label for="email">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="name@example.com" name="Email" required>
+                <div class="projects__item">
+                    <img src="assets/thumbnails/nexter-thumbnail.jpg" alt="Nexter" class="projects__image">
+                    <a href="https://nexter-rowanff.netlify.app/" target="_blank" class="btn projects__btn">View Website</a>
                 </div>
 
+                <div class="projects__item">
+                    <img src="assets/thumbnails/trillo-thumbnail.jpg" alt="Trillo" class="projects__image">
+                    <a href="https://trillo-rowanff.netlify.app" target="_blank" class="btn projects__btn">View Website</a>
+                </div>
+
+                <div class="projects__item">
+                    <img src="assets/thumbnails/natours-thumbnail.jpg" alt="Natours" class="projects__image">
+                    <a href="https://natours-rowanff.netlify.app/" target="_blank" class="btn projects__btn">View Website</a>
+                </div>
+
+                <div class="projects__item">
+                    <img src="assets/thumbnails/tindog-thumbnail.jpg" alt="Tindog" class="projects__image">
+                    <a href="https://tindog-rowanff.netlify.app" target="_blank" class="btn projects__btn">View Website</a>
+                </div>
+
+                <div class="projects__item">
+                    <img src="assets/thumbnails/museumofcandy-thumbnail.jpg" alt="Museum of Candy" class="projects__image">
+                    <a href="https://museumofcandy-rowanff.netlify.app" target="_blank" class="btn projects__btn">View Website</a>
+                </div>
+
+                <div class="projects__item">
+                    <img src="assets/thumbnails/drumkit-thumbnail.jpg" alt="Drumkit" class="projects__image">
+                    <a href="https://drumkit-rowanff.netlify.app" target="_blank" class="btn projects__btn">View Website</a>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" class="form-control" id="subject" placeholder="Subject" name="Subject" required>
-              </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" id="message" rows="5" name="Message" required></textarea>
-            </div>
-
-            <input type="hidden" name="_next" value="https://rowan-franciscus.github.io/portfolio/">
-
-            <button class="btn btn-dark" type="submit">Send</button>
-
-          </form> -->
-          
-    </section>
-
-    <section id="footer">
-
-        <div class="inner-footer">
-            <p>© Rowan Franciscus 2021</p>
         </div>
 
-    </section>
-    
-</body>
+        <!-- <div class="contact">
+            
+            <h1 class="heading-2 contact__heading">Contact</h1>
 
+            <div class="contact__details">
+
+                <p class="contact__item">rowan.franciscus@gmail.com</p>
+                <p class="contact__item">|</p>
+                <p class="contact__item">+264 81 655 4051</p>
+                <p class="contact__item">|</p>
+                <p class="contact__item">linkedin.com/in/rowan-franciscus</p>
+
+            </div>
+
+            <div class="contact__form">
+
+                <form class="contact__layout" action="index.html">
+
+                    <div class="contact__input-container">
+                        <input type="text" name="name" class="contact__input">
+                        <label for="name" class="contact__label">Name</label>
+                        <span class="contact__placeholder">Name</span>
+                    </div>
+
+                    <div class="contact__input-container">
+                        <input type="email" name="email" class="contact__input">
+                        <label for="email" class="contact__label">Email Address</label>
+                        <span class="contact__placeholder">Email Address</span>
+                    </div>
+
+                    <div class="contact__input-container">
+                        <input type="tel" name="phone" class="contact__input">
+                        <label for="phone" class="contact__label">Contact Number</label>
+                        <span class="contact__placeholder">Contact Number</span>
+                    </div>
+
+                    <div class="contact__input-container">
+                        <input type="text" name="subject" class="contact__input">
+                        <label for="subject" class="contact__label">Subject</label>
+                        <span class="contact__placeholder">Subject</span>
+                    </div>
+
+                    <div class="contact__input-container">
+                        <textarea name="message" class="contact__input contact__message"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                        <span class="contact__placeholder">Message</span>
+                    </div>
+
+                    <input type="submit" value="Submit" class="contact__btn">
+
+                </form>
+
+            </div>
+
+        </div> -->
+
+        <footer class="footer">
+
+            <h3 id="contact" class="heading-3 footer__heading">
+                Contact details
+            </h3>
+            <div class="contact__details">
+
+                <p class="contact__item">rowan.franciscus@gmail.com</p>
+                <p class="contact__item">|</p>
+                <p class="contact__item">+264 81 655 4051</p>
+                <p class="contact__item">|</p>
+                <p class="contact__item">linkedin.com/in/rowan-franciscus</p>
+
+            </div>
+
+            <p class="footer__copyright">&copy; Copyright 2021 by Rowan Franciscus.</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
 </html>

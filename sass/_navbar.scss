@@ -1,0 +1,28 @@
+.navbar {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        height: 6rem;
+    }
+
+    &__list {
+        width: 46%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-text;
+        transition: all .2s;
+
+        &:hover {
+            border-bottom: solid 1px $color-text;
+            transform: translateY(-2px);
+        }
+    }
+}

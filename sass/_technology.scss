@@ -1,0 +1,33 @@
+.technology {
+    margin-top: 30rem;
+
+    &__heading {
+        max-height: 10rem;
+        margin-left: 15rem;
+        margin-bottom: 5rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5rem;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 10rem 1fr;
+        grid-gap: 3rem;
+        align-items: center;
+    }
+
+    &__icon {
+        max-width: 10rem;
+        max-height: 10rem;
+        filter: grayscale(50);
+        transition: all .2s;
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}
